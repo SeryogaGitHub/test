@@ -1,0 +1,70 @@
+@import url(./default.less);
+@import url(./mixin.less);
+
+
+.center{
+	position: relative;
+	max-width: 880px;
+	padding: 15px;
+	width: 100%;
+	margin: 0 auto;
+}
+.mobile-menu{
+	display: none;
+	background: transparent;
+
+	svg{
+		display: block;
+	}
+}
+
+.dropdown {
+	background: transparent;
+	position: relative;
+	list-style: none;
+	font-family: 'Comfortaa', cursive;
+	font-size: 1em;
+
+	.toggle {
+		background-color: transparent;
+		display: flex;
+		align-items: center;
+
+		svg {
+			width: 25px;
+			height: 25px;
+		}
+
+		span {
+			font-size: 1em;
+			font-family: 'Comfortaa', cursive;
+		}
+	}
+
+	.dropdown-container {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background: #ffffff;
+		display: none;
+		z-index: 2;
+		border-radius: 0 0 5px 5px;
+		text-align: left;
+
+		.inner-container {
+			list-style: none;
+			font-family: 'Comfortaa', cursive;
+			padding-left: 25px;
+			font-size: 1em;
+			margin: 0;
+		}
+	}
+}
+
+main {
+	margin: 2%;
+	div {
+		margin: 2% 0;
+	}
+}
